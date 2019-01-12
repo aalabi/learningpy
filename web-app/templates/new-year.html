@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block title %}
+    My Website:: Is New Year
+{% endblock %}
+
+{% block heading %}
+    
+{% endblock %}
+
+{% block body %}
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+    {% if new_year %}
+        <h1>Yes! Happy New Year</h1>
+    {% else %}
+        <h1>NO</h1>
+    {% endif %}    
+{% endblock %}
